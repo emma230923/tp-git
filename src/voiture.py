@@ -11,11 +11,12 @@ class Voiture:
         la vitesse de la voiture (initalisée à 0).
     """
 
-    def __init__(self, nom, couleur):
+    def __init__(self, nom, couleur, carburant):
         """Constructeur"""
         self.nom = nom
         self.couleur = couleur
         self.vitesse = 0
+        self.carburant = carburant 
 
     def __str__(self):
       return f"La voiture {self.nom} de couleur {self.couleur} roule à {self.vitesse} km/h."
@@ -34,3 +35,10 @@ class Voiture:
         if increment > 10:
             increment = 10
         self.vitesse = min(130, self.vitesse + increment)
+
+    def __init__(self, nom, couleur, carburant):
+      """Constructeur"""
+      self.nom = nom
+      self.couleur = couleur
+      self.vitesse = 0
+      self.carburant = carburant
